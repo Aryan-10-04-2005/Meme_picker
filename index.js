@@ -32,8 +32,10 @@ function getEmotionsArray(cats){
 }
 
 function getMatchingCatsArray(){
-    const cr = document.querySelector('input[type="radio"]:checked').value
-    console.log(cr)
+    if(document.querySelector('input[type="radio"]:checked')){
+        const selectedEmotion = document.querySelector('input[type="radio"]:checked').value
+        console.log(selectedEmotion)
+    }
 }
 
 function renderEmotionsRadios(cats){
